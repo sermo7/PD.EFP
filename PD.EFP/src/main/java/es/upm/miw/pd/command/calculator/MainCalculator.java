@@ -1,9 +1,5 @@
 package es.upm.miw.pd.command.calculator;
 
-import es.upm.miw.pd.command.calculator.solution.PrintCommand;
-import es.upm.miw.pd.command.calculator.solution.ResetCommand;
-import es.upm.miw.pd.command.calculator.solution.SubtractCommand;
-import es.upm.miw.pd.command.calculator.solution.AddCommand;
 import upm.jbb.IO;
 
 public class MainCalculator {
