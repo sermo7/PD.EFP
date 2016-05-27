@@ -2,14 +2,11 @@ package es.upm.miw.pd.command.calculator;
 
 import upm.jbb.IO;
 
-public class SubtractCommand implements Comando {
+public class SubtractCommand extends ComandoAbstract {
 
-	private Calculator calculadora;
-	
 	public SubtractCommand(Calculator calculator) {
 		// TODO Auto-generated constructor stub
-		this.calculadora= calculator;
-		
+		super(calculator);	
 	}
 
 	@Override
@@ -22,7 +19,7 @@ public class SubtractCommand implements Comando {
 	public void execute() {
 		// TODO Auto-generated method stub
 		int i = IO.getIO().readInt();
-		this.calculadora.subtract(i);
+		this.getCalculadora().subtract(i);
 	}
 
 }

@@ -1,12 +1,10 @@
 package es.upm.miw.pd.command.calculator;
 
-public class PrintCommand implements Comando {
+public class PrintCommand extends ComandoAbstract {
 
-	private Calculator calculadora;
-	
 	public PrintCommand(Calculator calculator) {
 		// TODO Auto-generated constructor stub
-		this.calculadora= calculator;
+		super(calculator);
 	}
 
 	@Override
@@ -18,7 +16,7 @@ public class PrintCommand implements Comando {
 	@Override
 	public void execute() {
 		// TODO Auto-generated method stub
-		System.out.println(this.calculadora.getTotal());
+		System.out.println(this.getCalculadora().getTotal());
 
 	}
 
