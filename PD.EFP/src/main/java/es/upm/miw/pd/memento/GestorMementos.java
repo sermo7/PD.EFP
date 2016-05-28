@@ -3,14 +3,15 @@ package es.upm.miw.pd.memento;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public class GestorMementos<T> {
-    private SortedMap<String, T> lista = new TreeMap<String, T>();
+public class GestorMementos {
 
-    public void addMemento(String key, T memento) {
-        this.lista.put(this.lista.size() + ":" + key, memento);
+    private SortedMap<String, MementoCalculadora> lista = new TreeMap<String, MementoCalculadora>();
+
+    public void addMemento(String key, MementoCalculadora memento) {
+        this.lista.put(key, memento);
     }
 
-    public T getMemento(String key) {
+    public MementoCalculadora getMemento(String key) {
         return this.lista.get(key);
     }
 

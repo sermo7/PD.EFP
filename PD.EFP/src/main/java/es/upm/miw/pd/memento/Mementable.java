@@ -1,8 +1,9 @@
 package es.upm.miw.pd.memento;
 
-public interface Mementable<T> {
-    T createMemento();
+public interface Mementable {
 
-    void restoreMemento(T memento);
+    public MementoCalculadora createMemento();
 
+    public void restoreMemento(MementoCalculadora memento);
+	
 }
